@@ -29,7 +29,7 @@
             <a class="nav-link active" aria-current="page" href="Principal.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactenos.php">Contacto</a>
+            <a class="nav-link" href="c">Contacto</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -37,8 +37,25 @@
               Crear
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="frm_Empleado.html">Empleado</a></li>
-              <li><a class="dropdown-item" href="frm_Inversion.html">Inversion</a></li>
+              <li><a class="dropdown-item" href="frm_Autores.html">Autores</a></li>
+              <li><a class="dropdown-item" href="frm_Bibliotecario.html">Bibliotecario</a></li>
+              <li><a class="dropdown-item" href="frm_Libros.html">Libros</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+              <li><a class="dropdown-item" href="frm_prestamo.html">Prestamo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mostrar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Listadousuarios.html">Datos inversion</a></li>
+              <li><a class="dropdown-item" href="Listad">Inversion</a></li>
               <li><a class="dropdown-item" href="frm_proveedor.html">Proveedor</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -47,7 +64,6 @@
               <li><a class="dropdown-item" href="frm_prestamo.html">Prestamo</a></li>
             </ul>
           </li>
-
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Busqueda">
@@ -58,51 +74,51 @@
   </nav>
 
 
+
+
   <main>
     <div class="container">
-      <H3> Cotización de prestamo y calculo de tasa de interés </H3>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre del producto a cotizar</label>
-          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <h2>Usuariosregistrados</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Identificación </th>
+            <th scope="col">Correo</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Opciones</th>
+        
+         
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>alvaro</td>
+            <td> rodriguez</td>
+            <td>alvaro99@gmail.com</td>
+            <td>8616803</td>
+            <td>cra.14No.10a-33</td>
+            <td>alvaro99@gmail.com</td>
+            <td>alvaro99@gmail.com</td>
+            <td>alvaro99@gmail.com</td>
+            <td></td>
+          </tr>
 
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> Monto del producto a cotizar </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Tasa de interés variable </label>
-          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> calcular cuotas </label>
-          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> calcular plazos </label>
-          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-        </div>
 
 
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> calculo total a pagar </label>
-          <input type="integer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
-        </div>
-        <button type="submit" class="btn btn-primary">procesar cotización</button>
-      </form>
-    </div>
 
+        </tbody>
+      </table>
     </div>
   </main>
   <footer class="footer  bg-light">
     <div class="container">
-      <span class="text-muted">COOPERATIVA VEGACOOP 2021 estamos ubicados en chia.</span>
+      <span class="text-muted">Sistema de bibliotecas municipal de chia.</span>
     </div>
   </footer>
 
